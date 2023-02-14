@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	color: #000305; 
+	font-family: 'Trebuchet MS', 'Trebuchet', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial, sans-serif';
+	line-height: 1.429em;
+	text-align: left;
+	background:  #ecf0f1;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header, section, footer, nav{
+	display:block;
+}
+
+/*cabecalho*/
+
+
+.cabecalho{
+	background: #DCDCDC;
+	border-bottom: 2px solid #000000;
+	overflow: auto;
+	width: 100%;
+}
+
+
+.cabecalho .logotipo img{
+	width: 32%;
+	height: 145px;
+	margin: 0%;
+	float: left;
+	display: block;
+	position: absolute;
+}
+
+@media (max-width: 768px) {
+	.cabecalho .logotipo img{
+		height: 118px;
+		width: 37%;
+	}
+}
+
+/* estilo do menu */
+.cabecalho .nav {
+	display: inline-block;
+	font-size: 140%;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	background-color: #06C;
+	padding-bottom: 7px;
+	padding-left: 25%;
+}
+	.nav-list {
+
+	}
+		.nav-item {
+			float: left;
+			*display:  inline;
+			zoom: 1;
+			list-style: none;
+		}
+			.nav-item a {
+				display: block;
+				margin:  15px 10px;
+				padding: 7px;
+				text-decoration: none;
+				color: #CAE1FF;
+					
+			}
+				.nav-item:last-child a {
+					border-radius: 0 5px 5px 0;
+				}
+
+				.nav-item a:hover {
+					color: #fff;
+					border-bottom: 4px solid #000080;
+					padding-bottom: 14px;
+				}
+				
+	#corpo .nav-item a[href="index.html"],
+	#empresa .nav-item a[href="belavista_empresa.html"]{
+	text-shadow: #1C1C1C 2px 4px 3px;
+	border-bottom: 4px solid #000080;
+	padding-bottom: 14px;
+	}
+	
+/* Menu responsivo tags adcionada no javaScript */
+	.nav-mobile {
+		display: none;
+		cursor:  pointer;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		background: #06C;	
+		border-radius: 5px;
+		line-height: 50px;
+		width: 100%;
+		height: 50px;
+		color: #CAE1FF;
+		
+		
+	} 
+		.nav-mobile:after {
+			content: "↓ MENU";
+		}
+
+	.nav-active {
+		display: block !important;
+		margin-top: 50px;
+	}
+
+	.nav-mobile-open {
+		border-radius: 5px 5px 0 0;
+	}
+		.nav-mobile-open:after {
+			content:  "↑ MENU";
+		}
+
+/* Menu responsivo */
+@media (max-width: 480px) {
+	.nav-item:first-child a {
+		border-radius: 0 !important;
+	}
+}
+
+@media (min-width: 360px) {
+	
+	.nav-mobile {
+		left: 50%;
+		width: 300px;
+		margin-left: -150px;
+	}
+
+	.nav-item:first-child a {
+		border-radius: 5px 0 0 5px;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav {
+		font-size: 5vw;
+		min-height: 50px;
+	}
+		.nav-list {
+			width: 100%;
+			display: none;
+		}
+			.nav-item {
+				width: 100%;
+				float: none;
+				border-top:  1px solid #FFCF00;
+				
+			}
+				.nav-item:first-child a {
+					border-radius: 5px 5px 0 0;
+				}
+
+				.nav-item:last-child a {
+					border-radius: 0 0 5px 5px;
+				}
+				
+				.nav-item a:hover {
+					border: none; 
+					border-radius: 20px;
+					-webkit-border-radius: 20px;
+				}
+				
+				#corpo .nav-item a[href="index.html"],
+				#empresa .nav-item a[href="belavista_empresa.html"]{
+					text-shadow: #1C1C1C 2px 4px 3px;
+					border: none;
+				}
+
+	/* Deixa o menu mobile visivel só para celulares e tablets */
+	.nav-mobile {
+		display: block;
+	}
+}
+
+/*conteudo principal*/
+
+#corpo #sessao_principal{
+	margin: 0 auto;
+	clear: left;
+	width: 80%;
+	height: auto;
+	border: 1px solid #CCC;
+	text-align: center;
+}
+
+#corpo #sessao_principal .conteudo{
+	width: 220px;	
+	margin: 2%;
+	display: inline-block;
+}
+
+#corpo #sessao_principal .titulo a{
+	text-decoration: none;
+	color: #0000CD;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 10px;
+	font-size: 28px;
+}
+
+#corpo #sessao_principal .texto{
+	line-height: 15px;
+}
+
+#corpo #sessao_principal .texto a{
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	font-weight: bolder;
+}
+
+#corpo #sessao_principal .texto a strong{
+	color: #00008B;
+}
+
+#corpo .fachada img{
+	width: 100%;
+	height: auto;
+	margin: 2% 0 2% 0;
+	padding-top: 5px;
+}
+
+#corpo .galeria img{
+	width: 100%;
+	height: 165px;
+	margin: 2% 0 2% 0;
+	padding-top: 5px;
+}
+
+#corpo .orcamento img{
+	width: 100%;
+	height: 165px;
+	margin: 2% 0 2% 0;
+	padding-top: 5px;
+}
+
+/*Formatação pag a empresa*/
+
+#empresa .todo_conteudo{
+	margin: 40px auto;
+	width: 72%;
+}
+
+#empresa .todo_conteudo:nth-child(3){
+	margin-bottom: 80px;
+}
+
+#empresa .titulo{
+	padding-top: 14px;
+	padding-bottom: 14px;
+	margin-bottom: 20px;
+}
+
+#empresa .titulo h2{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #006;
+	padding-left: 25px;
+}
+
+#empresa .cont_imagem img{
+	margin-left: 3%;
+	border: 8px solid #B2B2B2;
+	width: 26%;
+	height: auto;
+}
+
+#empresa p{
+	padding-left: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {	
+	#empresa .todo_conteudo{
+	width: 90%;
+	}
+	
+	#empresa .titulo{
+		text-align: center;
+	}
+	
+		#empresa .cont_imagem{
+			text-align: center;
+			border: none;
+		}
+		
+			#empresa .cont_imagem img{
+				text-align: center;
+				border: 4px solid #B2B2B2;
+				width: 29%;
+			}
+				#empresa .todo_conteudo:nth-child(3) h2{
+					text-align: left;
+				}
+}
+
+/*rodape*/
+
+#rodape {
+	float: left;
+	clear: both;
+	padding-top: 10px;
+	width: 100%;
+	height: auto;
+	background: #003770;
+	color: #F8F8FF;	
+}
+
+#rodape h4,h5,h6{
+	text-align: center;
+	line-height: 21px;
+}
+
+
+#rodape h5 strong{
+	color: #8B8989;
+	font-weight: bolder;
+}
+
+#rodape h6 {
+	/*estilo |variação | negrito | tamanho da fonte | familia fonte  
+	style | font-variant | font-weight | font-size | font-family*/
+	font: italic bold 12px arial, sans-serif;      
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+@media (max-width: 768px) {
+	#rodape h5,h6 {
+		font-size: 78%;
+	}
+	
+		#rodape h6 {
+			font-size: 70%;
+		}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px)
+{
+	.body{
+		clear:both;
+		margin: 0 auto;
+		width: 80%;
+		font-size: 80%;
+	}
+}
+
+        
+     
+   
+
+
+

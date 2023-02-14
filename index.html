@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8" />
+	<Title>Vidraçaria Bela vista</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="themes/favicon-16x16.png">
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/responsiveslides.css">
+	<link rel="stylesheet" href="css/estiloslide.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider4").responsiveSlides({
+        maxwidth: 800,
+        speed: 1700
+
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 1700,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+	</script>
+</head>
+
+<body id="corpo">
+	<header class="cabecalho">
+	<figure class="logotipo"><a href="#"><img src="img/logo.png" alt="logo"  /></a></figure>
+		<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="index.html" title="Home">Home</a></li>
+					<li class="nav-item"><a href="belavista_empresa.html" title="A empresa">A empresa</a></li>
+					<li class="nav-item"><a href="#" title="Serviços">Serviços</a></li>
+					<li class="nav-item"><a href="#" title="Contatos">Contatos</a></li>
+				</ul>
+			</nav>
+	</header>
+	
+		<section id="tudo">
+			<div class="callbacks_container">
+			<ul class="rslides" id="slider4">
+				<li>
+					<img class="foto" src="img/vidro01.jpg" alt="">
+					<p class="caption">Esta é uma legenda</p>
+				</li>
+				<li>
+					<img class="foto" src="img/vidro02.jpg" alt="">
+					<p class="caption">Esta é outra legenda</p>
+				</li>
+				<li>
+					<img class="foto" src="img/vidro03.jpg" alt="">
+					<p class="caption">Esta é a terceira legenda</p>
+				</li>
+			</ul>
+			</div>
+		</section>
+		
+	<main>
+		<section id="sessao_principal">
+				<div class="conteudo">
+					<h1 class="titulo"><a href="Vidracaria-Empresa.html" >A Empresa</a> </h1>
+					<div class="fachada"><a href="Vidracaria-Empresa.html"><img src="img/fachada.jpg" /></a></div>
+					<p class="texto"><a href="Vidracaria-Empresa.html">Conheça a nossa historia e saiba um pouco mais sobre nossas politicas de trabalho.<strong>cont..</strong> </a> </p>
+				</div>
+				
+					
+				<div class="conteudo">
+					<h1 class="titulo"><a href="Vidracaria-Empresa.html">Galeria</a> </h1>
+					<div class="galeria"><a href="Vidracaria-Empresa.html"><img src="img/Vidros-na-Cidade.jpg" /></a></div>
+					<p class="texto"><a href="Vidracaria-Empresa.html">Entre em contato agora mesmo e tenha ainda mais informação sobre nosso produto e serviços.<strong>cont..</strong> </a> </p>
+				</div>
+				
+				<div class="conteudo">
+					<h1 class="titulo"><a href="Vidracaria-Empresa.html">Orçamento</a> </h1>
+					<div class="orcamento"><a href="Vidracaria-Empresa.html"><img src="img/orcamento.jpg" /></a></div>
+					<p class="texto"><a href="Vidracaria-Empresa.html">Veja os produtos e serviços que oferecemos. Aqui você encontra o melhor négocio..<strong>cont..</strong> </a> </p>
+				</div>
+					
+			</section>
+	</main>
+	
+	<footer id="rodape">
+			<h4>Vidraçaria Bela Vista</h4>
+			<h5><strong>Telefone: </strong>(11)2302-1883 / <strong>Cel: </strong>(11)96703-9282</h5>
+			<h5><strong>Endereço: </strong>Rua Campinas, nº303, Bairro Bela vista / São paulo SP</h5>
+			<h6>Todos os direitos reservados</h6>
+	</footer>
+	<script src="script/comportamento.js"></script>
+</body>
+	
+</html>
